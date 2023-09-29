@@ -1,0 +1,45 @@
+.shows {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+}
+
+.showlist {
+    margin-top: 44px;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.list--is-active {
+    display: grid;
+}
+
+.sholistitem {
+
+    img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+}
+
+.showstabs{
+    display: flex;
+    justify-content: center;
+} 
+    .showtabsbutton {
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-bottom: 5px transparent white;
+        padding-bottom: 5px;
+        background:none;
+        text-transform: uppercase;
+        margin: 0 1vw;
+        cursor: pointer;    
+        }
+
+    .play--is-active {
+        border-bottom: 5px solid white;
+    } 
+    
+    
+

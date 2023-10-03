@@ -2,6 +2,12 @@
 @use 'variaveis.scss';
 @use '_shows.scss';
 @use '_plans.scss';
+@use '_watch.scss';
+@use '_leao.scss';
+@use '_device.scss';
+@use '_faq.scss';
+@use '_footer.scss';
+@use '_header.scss';
 
 @font-face {
     font-family: Avenir;
@@ -18,6 +24,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 $corDeFundo :#040714;
@@ -41,27 +48,52 @@ body {
 
 .text--big {
     @include text (18px);
+
+    @media (max-width:768px) {
+        @include text(15px);
+    }
 }
 
 .text {
     @include text;
+
+    @media (max-width:768px) {
+        @include text(14px);
+    }
 }
 
 .text--small {
     @include text(12px);
+
+    @media (max-width:768px) {
+        @include text(11px);
+    }
 }
 
 .title--big {
     @include title(48px);
+
+    @media (max-width:768px) {
+        @include title(26px);
+    }
 }
 
 .title {
     @include title;
+
+    @media (max-width:768px) {
+        @include title(24px);
+    }
 }
 
 .title--small {
     @include title(28px);
+
+    @media (max-width:768px) {
+        @include title(22px);
+    }
 }
+
 
 .link-text {
     @include text (18px);
@@ -77,7 +109,16 @@ body {
                     background-color: #6421ff;
                     text-transform: uppercase;
                     border-radius: 4px;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
-}
+                    text-decoration: none;
+                    letter-spacing: 1px;
+            
+
+                    .but--secondary {
+                        background-color: #6421ff;
+                    }
+
+                    .but--dark {
+                        background-color:  rgba(0,0,0,0.8);
+                    }
+}                   
 

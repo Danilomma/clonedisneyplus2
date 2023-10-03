@@ -8,6 +8,11 @@
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    list-style: none;
+
+    @media (max-width:768px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .list--is-active {
     display: grid;
@@ -18,12 +23,19 @@
     img {
     max-width: 100%;
     border-radius: 4px;
+    list-style: none;
 }
 }
 
 .showstabs{
     display: flex;
     justify-content: center;
+
+    @media (max-width:768px) {
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding-left: 18px;
+    }
 } 
     .showtabsbutton {
         color: white;
@@ -39,7 +51,12 @@
 
     .play--is-active {
         border-bottom: 5px solid white;
+
+        @media (max-width:768px) {
+            font-size: 16px;
+        }
     } 
     
+
     
 

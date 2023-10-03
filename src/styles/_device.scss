@@ -1,0 +1,41 @@
+.devices {
+    padding: 5.6vw;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .deviceslist {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+        list-style: none;
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .diviceitem {
+            text-align: center;
+            list-style: none;
+
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 24px;
+                font-style: oblique;
+                font-weight: bolder;
+            }
+
+            li {
+                list-style: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    
+}
